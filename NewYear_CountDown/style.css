@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./freestocks--Qf9JKLysUg-unsplash.jpg');
+  /* background-color: #2a2e2b; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+#title {
+  background-color: rgba(68, 68, 68, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+}
+#time {
+  text-align: center;
+}
+
+.countdown-container {
+  display: flex;
+}
+
+.time {
+  display: flex;
+  font-size: 1.2em;
+  flex-direction: column;
+  margin: 0 15px;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.time h1 {
+  margin-bottom: 0;
+}
+
+.time small {
+  color: #ccc;
+}
+
+.fa-snowflake {
+  color: rgb(248, 135, 248);
+  position: absolute;
+  top: -1px;
+  animation: fall linear forwards;
+}
+.fa-star {
+  color: #ffd700;
+  position: absolute;
+  top: -1px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
