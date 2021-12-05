@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: url('./images/bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -16,9 +16,12 @@ body {
 .container {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 20px;
   flex-wrap: wrap;
+}
+.container {
+  position: relative;
 }
 
 .card {
@@ -37,6 +40,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: rgb(94, 94, 94);
   color: white;
@@ -46,6 +50,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background: linear-gradient(black, rgb(239, 187, 28));
   color: white;
@@ -62,6 +67,7 @@ body {
 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -72,3 +78,16 @@ img {
 .sta-r {
   color: red;
 }
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+input {
+  width: 25%;
+  text-align: center;
+  height: 20px;
+  border-radius: 10px;
+}
+#search:focus {
+  border: 4px solid red;
+} */
